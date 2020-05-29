@@ -1,0 +1,78 @@
+{
+	"common": {
+		"name": "connectmydevice",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"zh-cn": "首次出版"
+			}
+		},
+		"title": "Connect my device",
+		"titleLang": {
+			"en": "Connect my device",
+			"de": "Schließen Sie mein Gerät an",
+			"ru": "Подключите мое устройство",
+			"pt": "Conecte meu dispositivo",
+			"nl": "Verbind mijn apparaat",
+			"fr": "Connecter mon appareil",
+			"it": "Collega il mio dispositivo",
+			"es": "Conecta mi dispositivo",
+			"pl": "Podłącz moje urządzenie",
+			"zh-cn": "连接我的设备"
+		},
+		"desc": {
+			"en": "only for testing",
+			"de": "nur zum testen",
+			"ru": "только для тестирования",
+			"pt": "apenas para teste",
+			"nl": "alleen voor testen",
+			"fr": "uniquement pour les tests",
+			"it": "solo per i test",
+			"es": "solo para pruebas",
+			"pl": "tylko do testowania",
+			"zh-cn": "仅用于测试"
+		},
+		"authors": [
+			"ast <ast@pixelconsult.at>"
+		],
+		"keywords": [
+			"homekit",
+			"smart",
+			"home"
+		],
+		"license": "MIT",
+		"platform": "Javascript/Node.js",
+		"main": "main.js",
+		"icon": "connectmydevice.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/pixelconsult/ioBroker.connectmydevice/master/admin/connectmydevice.png",
+		"readme": "https://github.com/pixelconsult/ioBroker.connectmydevice/blob/master/README.md",
+		"loglevel": "info",
+		"mode": "daemon",
+		"type": "general",
+		"compact": true,
+		"connectionType": "local",
+		"dataSource": "push",
+		"materialize": true,
+		"dependencies": [
+			{
+				"js-controller": ">=1.4.2"
+			}
+		]
+	},
+	"native": {
+		"option1": true,
+		"option2": "42"
+	},
+	"objects": [],
+	"instanceObjects": []
+}

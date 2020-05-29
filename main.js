@@ -38,11 +38,23 @@ class Connectmydevice extends utils.Adapter {
 		// this.config:
 		this.log.info('config option1: ' + this.config.option1);
 		this.log.info('config option2: ' + this.config.option2);
+    	this.log.info('testetse ' );
+
+
+
+		this.setObjectNotExists("test", {
+			type: 'channel',
+			common: {
+				name: "test"
+			},
+			native: {}
+		});
 
 		/*
 		For every state in the system there has to be also an object of type state
 		Here a simple template for a boolean variable named "testVariable"
-		Because every adapter instance uses its own unique namespace variable names can't collide with other adapters variables
+		Because every adapter instance uses its own unique namespace variable names
+		can't collide with other adapters variables
 		*/
 		await this.setObjectAsync('testVariable', {
 			type: 'state',
@@ -56,7 +68,13 @@ class Connectmydevice extends utils.Adapter {
 			native: {},
 		});
 
-		// in this template all states changes inside the adapters namespace are subscribed
+		var that=this;
+		this.getForeignState('sonoff.0.AquariumHeizung.Vcc', function (err, state) {
+
+            that.log.info('vcc of  AquariumHeizung: ' + state);
+        });
+
+                // in this template all states changes inside the adapters namespace are subscribed
 		this.subscribeStates('*');
 
 		/*
